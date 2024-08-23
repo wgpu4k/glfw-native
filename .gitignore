@@ -28,10 +28,6 @@ gradle-app.setting
 *.dylib
 *.so
 *.jar
-**/node_modules/
 /.kotlin/
-/wgpu4k-e2e/jvm/
-/wgpu4k-e2e/js-chromium/
 /local.properties
-/examples/iosApp/iOSApp.xcodeproj/xcuserdata/
 
