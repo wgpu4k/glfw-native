@@ -10,7 +10,7 @@ plugins {
 }
 
 
-val libraryDescription = "wgpu4k kotlin native binding."
+val libraryDescription = "glfw kotlin native binding."
 
 
 jreleaser {
@@ -80,7 +80,7 @@ publishing {
             pom {
                 name.set(project.name)
                 description.set(libraryDescription)
-                url.set("https://github.com/wgpu4k/wgpu4k-native")
+                url.set("https://github.com/wgpu4k/glfw-native")
                 inceptionYear.set("2024")
                 licenses {
                     license {
@@ -95,9 +95,9 @@ publishing {
                     }
                 }
                 scm {
-                    connection.set("scm:git:https://github.com/wgpu4k/wgpu4k-native.git")
-                    developerConnection.set("scm:git:https://github.com/wgpu4k/wgpu4k-native.git")
-                    url.set("https://github.com/wgpu4k/wgpu4k-native")
+                    connection.set("scm:git:https://github.com/wgpu4k/glfw-native.git")
+                    developerConnection.set("scm:git:https://github.com/wgpu4k/glfw-native.git")
+                    url.set("https://github.com/wgpu4k/glfw-native")
                 }
             }
         }
