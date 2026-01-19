@@ -11,6 +11,7 @@ linkerOpts.macos_arm64 = -framework IOKit -framework CoreGraphics -framework App
 linkerOpts.macos_x64 = -framework IOKit -framework CoreGraphics -framework AppKit
 
 linkerOpts.linux =           -lglfw \
+                             -lc \
                              -lm \
                              -ldl \
                              -lpthread \
@@ -24,9 +25,13 @@ compilerOpts.linux =         -I/usr/include/x86_64-linux-gnu/ \
                              -I/usr/include/ \
                              -I/opt/homebrew/opt/curl/include/
 
+linkerOpts.mingw =           -lgdi32
+
 ---
 
 void* glfwGetCocoaWindow(GLFWwindow* window);
-void* glfwGetX11Display(GLFWwindow* window);
+void* glfwGetX11Display();
 size_t glfwGetX11Window(GLFWwindow* window);
+void* glfwGetWaylandDisplay();
+void* glfwGetWaylandWindow(GLFWwindow* window);
 void* glfwGetWin32Window(GLFWwindow* window);
